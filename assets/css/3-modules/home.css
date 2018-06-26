@@ -1,0 +1,26 @@
+body {
+  background: #eaeaea; }
+
+.icon {
+  margin-top: 10px;
+  height: 30px;
+  margin-left: 15px;
+  margin-bottom: -8px; }
+
+a {
+  margin-right: 50px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border: solid 1px #eff1f4;
+  border-opacity: 0.5;
+  border-radius: 75px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  padding-right: 50px;
+  padding-left: 50px; }
+  a:hover {
+    color: rgba(125, 58, 164, 0.43); }

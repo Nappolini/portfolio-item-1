@@ -1,0 +1,316 @@
+.container
+    display: grid 
+    grid-gap: 2.5em 
+    grid-template-columns: repeat(2, 1fr)
+    margin: 0 auto 
+    margin-right: 2em 
+    margin-left: 2em 
+
+    
+
+    
+ 
+ 
+.header, 
+.footer
+    grid-column: span 2 
+
+.big, 
+.long, 
+.sq 
+   position: relative 
+   height: 100% 
+   width: 100%
+   cursor: pointer
+
+
+.sq 
+    display: none
+
+
+.header 
+    height: 5em 
+
+.big 
+    width: 100% 
+    display: relative
+    height: 25em 
+    grid-column: span 2
+    
+   
+
+.long 
+    height: 100%
+    position: relative
+
+    grid-column: span 2
+
+
+
+
+.footer 
+    height: 20em 
+    text-align: center
+
+    .address, 
+    .contact 
+        padding-top: 10px
+        
+
+        p 
+            font-weight: 200
+
+// .contact
+//     padding-right: 5em
+    
+.overlay 
+    position: relative
+    top: 0 
+    bottom 0 
+    right: 0 
+    left: 0 
+    height: 100%
+    width: 100% 
+    transition: .5s ease 
+    opacity: 0
+   
+
+    &:hover 
+        opacity: 1 
+
+.big:hover .overlay 
+    opacity: 1 
+    
+  
+
+
+.text-left 
+    position: relative
+    margin-left: -3em
+.text 
+    color: white
+    font-size: 20px
+    position: relative
+    width: 100% 
+    height: 100% 
+    top: -90%
+    left: -20%
+    transform: translate(-10%, -10%)
+    -ms-transform: translate(-10%, -10%)
+    text-align: center
+
+    p 
+        margin-top: -1em
+        margin-right: 55px
+        font-size: 16px
+        font-weight: 400 
+        color: white
+
+.social
+    display: flex 
+    justify-content: center
+    margin-bottom: 2em 
+    
+    li 
+        padding-right: 10px 
+
+.social-icon
+    opacity: 0.5
+    cursor: pointer
+     
+    &:hover 
+        opacity: 1 
+
+        
+
+
+.menu
+    display: flex
+    justify-content: space-between
+    flex-direction: row-reverse
+    margin-top: 1.5em
+    cursor: pointer
+     
+    &:hover 
+        color: pink
+
+    ul 
+        display: flex
+        display: none
+        transform: rotate(90deg)
+        transition: all 0.5s
+       
+    li 
+        padding-right: 10px
+
+    a 
+        color: black
+
+        &:hover
+            color: pink
+         
+
+.bar1, .bar2, .bar3 
+    width: 35px
+    height: 2px
+    background-color: black
+    opacity: .5
+    margin: 6px 0
+    transition: 0.4s
+    margin-right: -.5em
+    // margin-left: 5em 
+    // margin-right: 5em 
+
+.change .bar1 
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-7px, 6px)
+    background-color: pink
+
+
+.change .bar2 
+    opacity: 0
+
+.change .bar3 
+    -webkit-transform: rotate(45deg) translate(-8px, -8px)
+    transform: rotate(45deg) translate(-4px, -4px)
+    background-color: pink
+
+
+.topnav 
+    overflow: hidden
+    margin-top: 1.6em
+
+
+
+
+
+.topnav a 
+    display: none;
+    color: black
+    padding: 14px 16px
+    text-decoration: none
+    font-size: 17px
+
+
+.topnav a:hover 
+    color: pink
+
+
+
+.topnav a.icon 
+    position: absolute
+    right: 10px
+    top: 10px
+    display: block
+    color: black
+
+
+.topnav.responsive
+    margin-top: 1em
+    display: flex 
+
+
+.topnav.responsive .icon 
+    position: absolute
+    right: 10px
+    top: 10px
+    color: black
+
+
+.topnav.responsive a 
+    display: flex
+            
+
+@media screen and (min-width: 850px) 
+    .white 
+        color: white
+
+    .bar1, .bar2, .bar3 
+        margin-right: 3.1em
+
+    .big, 
+    .long, 
+    .sq 
+           position: relative 
+           height: 100% 
+           width: 100%
+
+    
+    .sq
+        display: block
+        height: 20em 
+
+
+
+
+
+
+
+        
+@media screen and (min-width: 1226px) 
+    .container
+        margin-right: 5em 
+        margin-left: 5em 
+        display: grid 
+        grid-template-columns: repeat(4, 1fr)
+
+    .header, 
+    .footer
+        grid-column: span 4 
+
+    
+    .big 
+        background-color: violet
+        position:relative
+        height: 25em 
+        grid-column: span 2
+        grid-row: span 2 
+        width: 100% 
+        height: 100%
+    
+    .long 
+        grid-column: span 2
+    
+    .sq
+        display: block
+        height: 16.5em 
+    
+
+    .footer
+        margin-top: 10em 
+        height: 15em 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-align: left
+    
+        .address
+            margin-right: -150px
+
+        .contact 
+            margin-top: 6em
+    
+
+    .order-1
+        order: 1 
+
+    .order-2 
+        order: 2
+    
+    .order-3 
+        order: 3 
+
+    .order-4 
+        order: 4 
+
+    .order-5 
+        order:  5
+
+// @media screen and (min-width: 1226px) 
+//     .long 
+//         height: 25em 
+
+//     body  
+//        overflow: hidden
+
+  
